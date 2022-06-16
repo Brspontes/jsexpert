@@ -1,1 +1,23 @@
-[{"id":"390a7281-fbe4-4dbc-bcc2-f8c3c78e8313","name":"Volt","releaseYear":2021,"available":true,"gasAvailable":true},{"id":"82a15efe-57ef-4190-acbb-e77fd1d87446","name":"Silverado","releaseYear":2022,"available":true,"gasAvailable":true},{"id":"4ea6f02d-14a1-4e8f-9d74-148c646b14cd","name":"Ranchero","releaseYear":2021,"available":true,"gasAvailable":true}]
+[
+  {
+    "id": "6adc6ed0-deb0-40e6-8882-198984ab893c",
+    "name": "Jetta",
+    "releaseYear": 2019,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "b3e9d589-de57-47a1-87f7-eb9f5adc4286",
+    "name": "Aventador",
+    "releaseYear": 2020,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "0831cfa2-a2e0-4eea-8013-31956bf6e859",
+    "name": "Model T",
+    "releaseYear": 2019,
+    "available": true,
+    "gasAvailable": true
+  }
+]

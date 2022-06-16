@@ -1,5 +1,4 @@
 const Base = require('./base/base')
-
 class CarCategory extends Base {
     constructor({ id, name, carIds, price }) {
         super({ id, name })
@@ -8,5 +7,4 @@ class CarCategory extends Base {
         this.price = price
     }
 }
-
 module.exports = CarCategory
