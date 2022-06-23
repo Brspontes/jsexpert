@@ -7,7 +7,7 @@ import DraftLog from "draftlog";
 export default class TerminalController {
   constructor() {
     this.print = {};
-    this.data = {};
+    this.data = [];
     this.terminal = {};
   }
 
@@ -25,6 +25,11 @@ export default class TerminalController {
     const data = database.map((item) => new Person(item).formatted(language));
     const table = chalkTable(this.getTableOptions(), data);
     this.print = console.draft(table);
+  }
+
+  updateTable(item) {
+    this.data.push(item);
+    this.print(chalkTable(this.getTableOptions(), this.data));
   }
 
   question(msg = "") {

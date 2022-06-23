@@ -1,4 +1,5 @@
 import database from "./../database.json";
+import Person from "./person.js";
 import TerminalController from "./terminalController.js";
 
 const DEFAULT_LANG = "pt-BR";
@@ -16,8 +17,11 @@ async function mainLoop() {
       return;
     }
     const person = Person.generateInstanceFromString(answer);
+    terminaController.updateTable(person.formatted(DEFAULT_LANG));
+
     return mainLoop();
   } catch (error) {
+    console.log(error);
     console.error("Deu ruim!!");
     return mainLoop();
   }
