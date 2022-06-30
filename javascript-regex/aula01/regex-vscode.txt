@@ -1,0 +1,13 @@
+^\d{3}.\d{3}.\d{3}-\d{2}$
+
+123.123.123-14
+420.711.218-99
+132.590.108-31
+
+^(\w+),\s(\w+)$
+Brian, Pontes
+Nicolas, Pontes
+Alisson, Pontes
+
+\[(.*?)\]\(([http|https].*?)\)
+[Brian Pontes](http://brianpontes.com.br)
