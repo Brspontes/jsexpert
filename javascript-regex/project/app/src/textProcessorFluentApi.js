@@ -1,4 +1,4 @@
-const { evaluateRegex } = require("./util");
+const { evaluateRegex } = require('./util');
 
 class TextProcessorFluentAPI {
   #content;
@@ -24,7 +24,7 @@ class TextProcessorFluentAPI {
   removeEmptyCharacters() {
     const trimSpaces = evaluateRegex(/^\s+|\s+$|\n/g);
     this.#content = this.#content.map((line) =>
-      line.map((item) => item.replace(trimSpaces, ""))
+      line.map((item) => item.replace(trimSpaces, ''))
     );
     return this;
   }
